@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{booktabs} %Tablas quedan mejor
+\usepackage{vmargin} %Márgenes
+\usepackage{hyperref}
+\setpapersize{A4}
+\setmargins{2.5cm}       % margen izquierdo
+{1.5cm}                        % margen superior
+{16.5cm}                      % anchura del texto
+{22.42cm}                    % altura del texto
+{10pt}                           % altura de los encabezados
+{1.5cm}                           % espacio entre el texto y los encabezados
+{0pt}                             % altura del pie de página
+{2cm}                           % espacio entre el texto y el pie de página
+
+\usepackage[none]{hyphenat} %No corta palabras al final de las lineas
+\usepackage{graphicx} %Imágenes
+\usepackage{subfigure} % subfiguras
+\graphicspath{{img/}} % Root for images
+\usepackage{wrapfig}
+\usepackage{siunitx} %Escribir números y unidades
+\usepackage{amsmath} %Mayor facilidad para escribir matrices y otros elementos matemáticos
+%\numberwithin{equation}{section} %En las ecuaciones se especifica también el capítulo
+\usepackage{xcolor} %Colores (\color{})
+\usepackage{lipsum}
+\usepackage{topcapt}
+\usepackage{parskip}
+\usepackage{braket}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{fancyhdr} %Cabeceras
+\pagestyle{fancy} % seleccionamos un estilo
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\scriptsize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=L,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=C,                 % the language of the code
+  morekeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=8pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\lhead{MPI programming} %CAMBIA
+\rhead{Parallel programming} %CAMBIA
+
+
+\begin{document}
+
+\setstretch{1.3} % Line spacing of 1.5
+\setlength{\parskip}{5mm}
+
+\renewcommand{\tablename}{Table}
+
+\thispagestyle{empty} %Primera página sin número
+\begin{center}
+	
+	{\scshape\LARGE Parallel programming\par}
+	\vspace{0.5cm}
+	\rule{15cm}{0.8pt}\\
+	{\huge\bfseries MPI Programming: Laplace\par}
+	\rule{15cm}{0.8pt}\\
+	\vspace{0.5cm}
+	{\large \textbf{ppM-1-4:} \itshape Michal Kustosz, Jorge Pardillos\par}
+
+\end{center}
+\setcounter{page}{1} %Empezamos a contar los números
+
+
+\pagenumbering{arabic} %Ponemos números normales (árabes) ya
+\pagestyle{fancy} % seleccionamos un estilo
+
+
+\section{Introduction}
+
+\section{Optimizations}
+
+\section{Conclusion}
+
+
+\end{document}
